@@ -129,10 +129,9 @@ This is an example of how to list things you need to use the software and how to
    git clone https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion.git
    ```
 2. Open the Python source code in VS Code or the IDE of your preference
-3. Install the prerequisite Python modules using 
+3. Install the prerequisite Python modules using _pip install_ 
    ```sh
-   *pip install* the follwoing modules
-   os, re, cv2, img2pdf, numpy, pandas, pytesseract, PIL, pdf2image 
+   pip install os re cv2 img2pdf numpy pandas pytesseract PIL pdf2image 
    ```
 4. Change git remote url to avoid accidental pushes to base project
    ```sh
