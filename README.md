@@ -37,9 +37,9 @@
 <h3 align="center">Python Script for Extracting Body Measurement Data from ArboLeaf Smart Scale-Generated Screenshots</h3>
 
   <p align="center">
-    This repository provides a Python script designed to address the lack of an API in the ArboLeaf app for managing historical body measurement data. Assuming users are willing to capture a screenshot of their daily metrics, the script enables automated extraction of key body indicators directly from the image. Extracted data is organized and stored in a Microsoft Excel file, facilitating extended data analysis, trend tracking, and visualization beyond the app’s native functionality. 
+    This repository provides a Python script designed to address the lack of an API in the ArboLeaf app for managing historical body measurement data. Assuming users are willing to capture a screenshot of the measurement, the script enables automated extraction of key body indicators directly from the image. Extracted data is organized and stored in a Microsoft Excel file, facilitating extended data analysis, trend tracking, and visualization beyond the app’s native functionality. 
     <br />
-    <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion"><strong>Explore the project files »</strong></a>
     <br />
     <br />
     <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/blob/main/2025_04_14.jpg">View a screenshot of an ArboLeaf app measurement</a>
@@ -85,7 +85,7 @@
 
 <? [![Product Name Screen Shot][product-screenshot]] (https://example.com)_?>
 
-This repository contains a Python script designed to process body composition data collected from an ArboLeaf smart scale. After taking a measurement, users can run the script after updating four parameters at the top of the script: the local/network location of the raw image file, the location where its pdf copy will be saved, the measurement's date value, and the local/network path of the final recipient Microsoft Excel file where the recorded data will be stored, enabling further analysis and tracking.
+This repository provides a Python script developed to automate the processing of body composition data captured by an ArboLeaf smart scale. After completing a measurement, users can execute the script by configuring four parameters at the top: the local or network path of the raw image file, the destination path for the code generated PDF copy, the date of the measurement, and the local or network path to the target Microsoft Excel file where the parsed data will be stored. This workflow streamlines data recording, supports storage centralization, and enables further analysis.
 
 [//]: # (Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `LnxRls`, `ArboLeaf-Smart-Scale-Data-Ingestion`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Python Script for Extracting Body Measurement Data from Scale-Generated Screenshots`, `Python Script for Extracting Body Measurement Data from Scale-Generated Screenshots`, `project_license`)
 
@@ -111,13 +111,14 @@ This repository contains a Python script designed to process body composition da
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Here are some instructions on setting up your project locally.
-Download the repo locally copy up and run it following these simple example steps.
+Here are the setup instructions for initializing your project in a local development environment.
+
+Clone or download the repository to your local machine, then configure and launch it by following the example steps provided below. This process ensures a seamless local build aligned with the project specifications.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* install the necessary Python modules 
+Here is a concise list of Python libraries required for the successful execution of the script in the data processing environment.
+* Download the necessary Python modules or *pip install* them as the **Installation** section shows below. 
   ```sh
     os, re, cv2, img2pdf, numpy, pandas, pytesseract, PIL, pdf2image 
 	```
@@ -146,9 +147,22 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-.
+After downloading or cloning the script, update the _Screenshot\_Network\_Location_ placeholder to the network path where the ArboLeaf app measurement screenshot (by replacing the placeholder _Screenshot\_FileName.jpeg_ with its real file name while leaving the jpeg extension) is stored on your computer. This update should be made in the _Define critical initial variables_ section of the script, a copy of which is shown below.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Similarly, replace the _Date\_Screenshot\_Taken_ placeholder with the actual date the screenshot was captured, following the _YYYY/MM/DD_ format. Finally, update the _ExcelFileName\_WhereBodyData\_WillBeSaved.xlsx_ placeholder with the desired name for the Microsoft Excel file that will store the recorded body measurement data.
+
+While this example assumes that the _.xlsx_ file is saved in the same network location as the _.jpeg_ screenshots, you are free to specify a different location. If you choose to do so, ensure you update it in the _output\_xls_ variable accordingly.
+
+*Define critical initial variables*  
+pdf_file_path = "C:/Screenshot_Network_Location/Screenshot_FileName.pdf"  
+jpg_file_path = "C:/Screenshot_Network_Location/Screenshot_FileName.jpeg"  
+reading_date = "Date_Screenshot_Taken"  
+  
+output_xls = 'C:/Screenshot_Network_Location/ExcleFileName_WhereBodyData_WiilBeSaved.xlsx'  
+
+After applying the placeholder updates, run the script to automatically generate a PDF version of the original JPEG and create or update the specified Excel file (automatically generated on first execution) with one appended record containing the body measurement data. Moving forward, you can execute the script repeatedly by updating the screenshot file name and capture date for each new entry.
+
+If you need to retake the screenshot for a given date, simply replace the JPEG with the updated measurement screenshot and rerun the script without modifying any placeholders; the script will overwrite the existing record for that date in the Excel file to reflect the new data.   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,10 +171,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Clone Script
+- [ ] Change initial parameter values
+- [ ] Execute the script 
+    - [ ] The .xlsx file will be automatically generated upon the initial execution of the script and a new data record with all body measurements will be appended, as it also will on each subsequent run.
 
 See the [open issues](https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/issues) for a full list of proposed features (and known issues).
 
@@ -177,9 +191,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
+3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
+4. Push to the Branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -204,7 +218,7 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Know Buddy - [@AnnXiety12](https://x.com/AnnXiety12) - has no email yet.
 
 Project Link: [https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion](https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion)
 
@@ -215,9 +229,7 @@ Project Link: [https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion](ht
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+*@AnnXiety12* thanks for your invaluable help! I, Know Buddy, appreciates your feedback!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
