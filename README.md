@@ -37,12 +37,12 @@
 <h3 align="center">Python Script for Extracting Body Measurement Data from ArboLeaf Smart Scale-Generated Screenshots</h3>
 
   <p align="center">
-    This repository contains a Python script developed to overcome the absence of an API in the ArboLeaf app for retrieving historical body metrics. The script enables users to extract key body measurements from a screenshot of the app’s results screen, allowing for external storage, analysis, and visualization of their data beyond the app’s native capabilities.  
+    This repository provides a Python script designed to address the lack of an API in the ArboLeaf app for managing historical body measurement data. Assuming users are willing to capture a screenshot of their daily metrics, the script enables automated extraction of key body indicators directly from the image. Extracted data is organized and stored in a Microsoft Excel file, facilitating extended data analysis, trend tracking, and visualization beyond the app’s native functionality. 
     <br />
     <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion">View Demo</a>
+    <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/blob/main/2025_04_14.jpg">View a screenshot of an ArboLeaf app measurement</a>
     &middot;
     <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
