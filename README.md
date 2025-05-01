@@ -122,8 +122,7 @@ Here is a concise list of Python libraries required for the successful execution
   ```sh
     os, re, cv2, img2pdf, numpy, pandas, pytesseract, PIL, pdf2image 
 	```
-* Tesseract OCR is an open-source, widely used optical character recognition (OCR) engine that converts text within images into machine-readable text. You'll need
-	* Tesseract installed on your machine before using this script. Tesseract-OCR can be downloaded from any of the following locations:
+* Tesseract OCR is an open-source, widely used optical character recognition (OCR) engine that converts text within images into machine-readable text. You'll need Tesseract installed on your machine before using this script. Tesseract-OCR can be downloaded from any of the following locations:
 		* _https://sourceforge.net/projects/tesseract-ocr.mirror/_    **(SourceForge)**
  		* _https://github.com/tesseract-ocr/tessdoc_                  **(GitHub)**
   		* _https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.3.0.20221214.exe_    **(Digital collections of Mannheim University Library)**
