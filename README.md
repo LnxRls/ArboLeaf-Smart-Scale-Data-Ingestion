@@ -129,6 +129,9 @@ Here is a concise list of Python libraries required for the successful execution
   		* _https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.3.0.20221214.exe_    **(Digital collections of Mannheim University Library)**  
 	* To install and get introduced to Tesseract-OCR's usage basics go to _https://tesseract-ocr.github.io/tessdoc/Installation.html_ 	   
 
+* It is highly recommended that you store the original screenshots collected from ArboLeaf, used for scale measurements, in a separate backup or network storage location. This precaution is important because the script modifies the JPEG during image processing to extract body statistics. After encountering an error or failing to execute properly the script could have passed the point it processes an image, which is not at its original state anymore. Due to that happenstance, re-executing the script could result in image processing inaccuracies or failure to process the image altogether because, in essence, it'll reprocess an already processed image. Therefore, if the script fails it's recommended that you replace the image the script may have already processed with its original from the separate backup location, before re-executing the scirpt after any coding modfications you've made to it.     
+  ```sh
+    os, re, cv2, img2pdf, numpy, pandas, pytesseract, PIL, pdf2image 
   
 ### Installation
 
