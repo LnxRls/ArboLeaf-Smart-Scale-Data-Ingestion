@@ -42,7 +42,7 @@
     <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion"><strong>Explore the project files »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/blob/main/2025_04_14.jpg">View a screenshot of an ArboLeaf app measurement</a>
+    <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/images/blob/main/2025_04_14.jpeg">View a screenshot of an ArboLeaf app measurement</a>
     &middot;
     <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
