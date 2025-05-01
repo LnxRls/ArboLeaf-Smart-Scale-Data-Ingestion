@@ -229,7 +229,7 @@ Project Link: [https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion](ht
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-*@AnnXiety12* thanks for your invaluable help! I, Know Buddy, appreciates your feedback!
+*@AnnXiety12* thanks for your invaluable help! I, Know Buddy, appreciate your feedback!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
