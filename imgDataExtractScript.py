@@ -34,6 +34,11 @@ reading_date = "Date_Screenshot_Taken"
 
 output_xls = 'C:/Screenshot_Network_Location/ExcleFileName_WhereBodyData_WiilBeSaved.xlsx'
 
+# checks for source jpeg file
+if not os.path.exists(jpeg_file_path):
+    print(f" ****************** cannot find jpeg file or file has the wrong name **********************")
+    exit()
+
 
 def sharpen_and_replace_image(image_path, brightness, contrast):
     """
