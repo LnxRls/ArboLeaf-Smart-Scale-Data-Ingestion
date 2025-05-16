@@ -15,6 +15,7 @@ Returns:
 """
 
 import os
+import os.path
 import re
 
 import cv2
