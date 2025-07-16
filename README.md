@@ -131,7 +131,7 @@ Here is a concise list of Python libraries required for the successful execution
 
 * It is highly recommended that you store the original screenshots collected from ArboLeaf, used for scale measurements, in a separate backup or network storage location. This precaution is important because the script modifies the JPEG during image processing to extract body statistics. After encountering an error or failing to execute properly the script could have passed the point it processes the image, leaving it in an altered (non-original) state. Due to that happenstance, re-executing the script could result in image processing inaccuracies or failure to process the image altogether because, in essence, it'll re-process an already processed image. Therefore, if the script fails it's recommended that you replace the image the script may have already processed with its original, from the separate backup location, before re-executing the scirpt, after any coding modfications you've made to it.     
   ```sh
-    os, re, cv2, img2pdf, numpy, pandas, pytesseract, PIL, pdf2image 
+    os, re, cv2, img2pdf, numpy, pandas, pytesseract, PIL, pdf2image, seaborn, matplotlib, mplcursors, plotly 
   
 ### Installation
 
