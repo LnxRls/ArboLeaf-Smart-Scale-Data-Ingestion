@@ -383,7 +383,8 @@ plt.show()
 # Displays the correlation matrix in an advanced interactive HTML format with beautiful SVG-rounded 
 # squares and cluster-colored borders with interactive hover popups showing exact correlations. 
 # Single-click in any of the clusters in the legend to temporarily hide it from the matrix and click it 
-# again to bring it back.
+# again to bring it back. The clusters are distinguished from their color-coded frames around their  
+# correlation matrix squares. 
 
 # ───────────────────────────────────────────────────────────────────────────────────────────────────
 # Mini visualization options for correlation strength that DO NOT differentiate between + and - coeffs
