@@ -198,7 +198,6 @@ The code produces 3 static and 1 interactive color-mapped correlation matrices t
 
 
 
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
