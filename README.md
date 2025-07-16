@@ -197,7 +197,7 @@ See the [open issues](https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingest
 The code produces 3 static and 1 interactive color-mapped correlation matrices that help the user observe the relationships slowly forming among the body statistics as more data gets collected. The interactive graph supports tooltips upon hovering over the matrix squares and a single-click hiding/unhiding of the squares that belong to a cluster for data exploration purposes.      
 Correlation Matrix jpg samples you'll find in the images folder of the site. 
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
