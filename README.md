@@ -120,7 +120,7 @@ Clone or download the repository to your local machine, then configure and launc
 Here is a concise list of Python libraries required for the successful execution of the script in the data processing environment.
 * Download the necessary Python modules or *pip install* them as the **Installation** section shows below. 
   ```sh
-    os, re, cv2, img2pdf, numpy, pandas, pytesseract, PIL, pdf2image 
+    os, re, cv2, img2pdf, numpy, pandas, pytesseract, PIL, pdf2image, seaborn, matplotlib, mplcursors, plotly 
 	```
 * Tesseract OCR is an open-source, widely used optical character recognition (OCR) engine that converts text within images into machine-readable text. You'll need Tesseract installed on your machine before using this script. Tesseract is called in the Python script at the line that looks like _pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'_  
 	* Tesseract-OCR can be downloaded from any of the following locations:  
@@ -189,6 +189,13 @@ If you need to retake the screenshot for a given date, simply replace the JPEG w
 See the [open issues](https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- VISUALIZATIONS - STATISTICS -->
+## Visualizations - Correlation Matrices
+The code produces 3 static and 1 interactive color-mapped correlation matrices that help the user observe the relationships slowly forming among the body statistics as more data gets collected. The interactive graph supports tooltips upon hovering over the matrix squares and a single-click hiding/unhiding of the squares that belong to a cluster for data exploration purposes.      
+
 
 
 
