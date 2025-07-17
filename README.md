@@ -196,9 +196,11 @@ See the [open issues](https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingest
 ## Visualizations - Correlation Matrices
 The code generates four correlation matrices to help users analyze relationships between pairs of body statistics as data accumulates. All matrices are located in the *Images* folder. The *Static Matrices (3)* are named *Figure_x.jpg* (where *x* = 1, 2, 3) corresponding to Plots 1, 2, and 3 in the Python code and the *Interactive Matrix (1)* is the HTML file named *correlation_svg_curved_clusters.html*. The interactive matrix features are briefly summarized below:
 
-	*Tooltip Hover*: Upon mouse hovering over the matrix squares the tooltip displays the correlation coefficient of the x-y body-statistic pair numerically and visually.
-	*Dynamic Sizing*: Square sizes scale with the magnitude of the correlation coefficient.
-	*Cluster Toggle*: Users can click to hide/unhide clusters of squares categorized by having their perimeter colored with the same color, enabling focused exploration of 			  specific relationships.      
+	> *Tooltip Hover*:  Upon mouse hovering over the matrix squares the tooltip displays the correlation coefficient of the x-y body-statistic 
+ 			    pair numerically and visually.
+	- *Dynamic Sizing*: Square sizes scale with the magnitude of the correlation coefficient.
+	- *Cluster Toggle*: Users can click to hide/unhide clusters of squares categorized by having their perimeter colored with the same color, 
+ 			    enabling focused exploration of specific relationships.      
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
