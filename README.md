@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion">
-    <img src="images/logo.png" alt="Logo" width="100" height="100">
+    <img src="images/logo.jpg" alt="Logo" width="100" height="100">
   </a>
 
 <h3 align="center">Python Script for Extracting Body Measurement Data from ArboLeaf Smart Scale-Generated Screenshots</h3>
