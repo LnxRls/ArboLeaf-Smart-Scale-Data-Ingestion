@@ -42,7 +42,7 @@
     <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion"><strong>Explore the project files »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/blob/main/images/2025_04_14.jpeg">View a screenshot of an ArboLeaf app measurement</a>
+    <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/blob/main/Images/2025_04_14.jpeg">View a screenshot of an ArboLeaf app measurement</a>
     &middot;
     <a href="https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
@@ -272,7 +272,7 @@ Project Link: [https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion](ht
 [license-url]: https://github.com/LnxRls/ArboLeaf-Smart-Scale-Data-Ingestion/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: Images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
