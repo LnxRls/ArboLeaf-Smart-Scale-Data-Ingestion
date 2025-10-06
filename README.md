@@ -85,7 +85,7 @@
 
 <? [![Product Name Screen Shot][product-screenshot]] (https://example.com)_?>
 
-This repository provides a Python script developed to automate the processing of body composition data captured by an ArboLeaf smart scale. After completing a measurement, end users can execute the script by configuring four parameters at the top: the local or network path of the raw image file, the destination path for the code generated PDF copy, the date of the measurement, and the local or network path to the target Microsoft Excel file where the parsed data will be stored. This workflow streamlines data recording, supports storage centralization, and enables further analysis.
+This repository provides a Python script developed to automate the processing of body composition data captured by an ArboLeaf smart scale. After completing a measurement, end users can execute the script by configuring a couple of CLI flags: the local or network path of the raw image files, and the local or network path to the target Microsoft Excel file where the parsed data will be stored. This workflow streamlines data recording, supports storage centralization, and enables further analysis.
 
 [//]: # (Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `LnxRls`, `ArboLeaf-Smart-Scale-Data-Ingestion`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Python Script for Extracting Body Measurement Data from Scale-Generated Screenshots`, `Python Script for Extracting Body Measurement Data from Scale-Generated Screenshots`, `project_license`)
 
@@ -113,7 +113,7 @@ This repository provides a Python script developed to automate the processing of
 
 Here are the setup instructions for initializing your project in a local development environment.
 
-Clone or download the repository to your local machine, then configure and launch it by following the example steps provided below. This process ensures a seamless local build aligned with the project specifications.
+Clone or download the repository to your local machine, then configure and launch it by following the directions provided below. This process ensures a seamless local build aligned with the project specifications.
 
 ### Prerequisites
 
