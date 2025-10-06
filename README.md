@@ -157,10 +157,12 @@ Here is a concise list of Python libraries required for the successful execution
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-After downloading or cloning the script, assign values to the only two necessary flags, namely, *--dir_path* and *--path_output_xls* and execute it as the example in the **Code Execution Example** section of the script's header shows. *--dir_path* is the network location where the screenshots (one or many) to be processed are stored and *--path_output_xls* is the directory of the MS Excel file where the body composition data will be saved.
+After downloading or cloning the script, assign values to the only two necessary flags, namely, *--dir_path* and *--path_output_xls* and execute it as the example in the **Code Execution Example** section of the script's header shows. *--dir_path* is the local or network directory location (one or many) screenshots are stored for processing and *--path_output_xls* is the directory of the MS Excel file where the body composition data parsed from screenshots will be saved.
 
 The script can process multiple scale screenshots as a batch. It generates a PDF version for each of the screenshot JPEGs and appends new Excel rows containing the body composition measurement data read from the JPEGs. 
-If you need to retake the screenshot for a given date, simply replace the JPEG with the updated measurement screenshot and rerun the script without modifying any placeholders; the script will overwrite the existing Excel row for that date in the Excel file to reflect the new data. However, you must keep in mind that the script is currently designed to save the data from only one smart scale measurement per day.     
+If you need to retake the screenshot for a given date, simply replace the JPEG with the updated measurement screenshot and rerun the script without modifying any flags; the script will overwrite the existing Excel row for that date in the Excel file to reflect the new data. However, you must keep in mind that the script is currently designed to save the data from only one smart scale measurement per day. 
+
+Lastly, the end user can mix screenshot retakes with new screenshots in the same folder at the *--dir_path* location before executing the script.    
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
