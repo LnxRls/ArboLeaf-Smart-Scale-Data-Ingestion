@@ -323,10 +323,11 @@ corr_matrix = df_noDate.corr()
 # Generates a correlation matrix visualizing the relationships between all collected body statistic pairs
 # from ArboLeaf app screenshots.
 
-plt.figure(figsize=(12,8))
+plt.figure(figsize=(10, 10))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 plt.title('Correlation Matrix - All Variables')
-plt.xticks(rotation=45, ha='right')
+plt.xticks(rotation=25, ha='right', size=9)
+plt.tight_layout()
 plt.show()
 
 #  ------------------------------ 2nd PLOT ------------------------------------------------------
@@ -673,5 +674,6 @@ fig.add_trace(go.Scatter(
     ),
     showlegend=False
 ))
+
 
 fig.write_html('C:/ArboLeaf_Data/correlation_svg_curved_clusters.html')
