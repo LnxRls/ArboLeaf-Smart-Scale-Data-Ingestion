@@ -85,7 +85,7 @@
 
 <? [![Product Name Screen Shot][product-screenshot]] (https://example.com)_?>
 
-This repository provides a Python script developed to automate the processing of body composition data captured by an ArboLeaf smart scale. After completing a measurement, users can execute the script by configuring four parameters at the top: the local or network path of the raw image file, the destination path for the code generated PDF copy, the date of the measurement, and the local or network path to the target Microsoft Excel file where the parsed data will be stored. This workflow streamlines data recording, supports storage centralization, and enables further analysis.
+This repository provides a Python script developed to automate the processing of body composition data captured by an ArboLeaf smart scale. After completing a measurement, end users can execute the script by configuring four parameters at the top: the local or network path of the raw image file, the destination path for the code generated PDF copy, the date of the measurement, and the local or network path to the target Microsoft Excel file where the parsed data will be stored. This workflow streamlines data recording, supports storage centralization, and enables further analysis.
 
 [//]: # (Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `LnxRls`, `ArboLeaf-Smart-Scale-Data-Ingestion`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Python Script for Extracting Body Measurement Data from Scale-Generated Screenshots`, `Python Script for Extracting Body Measurement Data from Scale-Generated Screenshots`, `project_license`)
 
@@ -157,22 +157,11 @@ Here is a concise list of Python libraries required for the successful execution
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-After downloading or cloning the script, update the _Screenshot\_Network\_Location_ placeholder to the network path where the ArboLeaf app measurement screenshot (by replacing the placeholder _Screenshot\_FileName.jpeg_ with its real file name while leaving the jpeg extension) is stored on your computer. This update should be made in the _Define critical initial variables_ section of the script, a copy of which is shown below.
+After downloading or cloning the script, assign values to the only two necessary flags, namely, *--dir_path* and *--path_output_xls* and execute it as the example in the **Code Execution Example** section of the script's header shows. *--dir_path* is the network location where the screenshots (one or many) to be processed are stored and *--path_output_xls* is the directory of the MS Excel file where the body composition data will be saved.
 
-Similarly, replace the _Date\_Screenshot\_Taken_ placeholder with the actual date the screenshot was captured, following the _YYYY/MM/DD_ format. Finally, update the _ExcelFileName\_WhereBodyData\_WillBeSaved.xlsx_ placeholder with the desired name for the Microsoft Excel file that will store the recorded body measurement data.
+The script can process multiple scale screenshots as a batch. It generates a PDF version for each of the screenshot JPEGs and appends new Excel rows containing the body composition measurement data read from the JPEGs. 
+If you need to retake the screenshot for a given date, simply replace the JPEG with the updated measurement screenshot and rerun the script without modifying any placeholders; the script will overwrite the existing Excel row for that date in the Excel file to reflect the new data. However, you must keep in mind that the script is currently designed to save the data from only one smart scale measurement per day.     
 
-While this example assumes that the _.xlsx_ file is saved in the same network location as the _.jpeg_ screenshots, you are free to specify a different location. If you choose to do so, ensure you update it in the _output\_xls_ variable accordingly.
-
-*Define critical initial variables*  
-pdf_file_path = "C:/Screenshot_Network_Location/Screenshot_FileName.pdf"  
-jpg_file_path = "C:/Screenshot_Network_Location/Screenshot_FileName.jpeg"  
-reading_date = "Date_Screenshot_Taken"  
-  
-output_xls = 'C:/Screenshot_Network_Location/ExcleFileName_WhereBodyData_WiilBeSaved.xlsx'  
-
-After applying the placeholder updates, run the script to automatically generate a PDF version of the original JPEG and create or update the specified Excel file (automatically generated on first execution) with one appended record containing the body measurement data. Moving forward, you can execute the script repeatedly by updating the screenshot file name and capture date for each new entry.
-
-If you need to retake the screenshot for a given date, simply replace the JPEG with the updated measurement screenshot and rerun the script without modifying any placeholders; the script will overwrite the existing record for that date in the Excel file to reflect the new data.   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
